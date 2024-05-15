@@ -1,18 +1,10 @@
 // Normal background principal
-export const primaryColor = '#F8F0E5';
+export const Gunmetal = '#0a2e36';
 
-// Dark background principal
-export const primaryDarkColor = '#070F1A ';
+export const SpringGreen = '#27fb6b ';
 
-// Cor background secundária
-export const secColor = '#0F2C59';
+export const Emerald = '#14cc60';
 
-// Cor para sucesso e informação
-export const successColor = '#2eb92d';
-export const infoColor = '#2eb92d';
+export const OfficeGreen = '#036d19';
 
-// Cor para erro
-export const errorColor = '#FF5100';
-
-// Cor para botões
-export const buttonColor = '#0F2C59';
+export const PigmentGreen = '#09a129';

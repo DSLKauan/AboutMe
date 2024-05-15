@@ -1,6 +1,6 @@
-import styled, { createGlobalStyle } from 'styled-components';
-import * as color from '../config/colors';
-import 'react-toastify/dist/ReactToastify.css';
+import styled, { createGlobalStyle } from "styled-components";
+
+import BackgroundImage from "../images/backgroundInitial/stars.png";
 
 export default createGlobalStyle`
   * {
@@ -20,50 +20,19 @@ export default createGlobalStyle`
   }
 
   button {
-    background: ${color.buttonColor};
-    color: #fff;
-    border: none;
+    width: 295px;
+    padding: 10px;
     border-radius: 50vh;
-    padding: 8px 15px;
-    cursor: pointer;
-    margin: 5px 5px;
-  }
-
-  a {
-    text-decoration: none;
-    color: #2C50FF;
-  }
-  a:hover {
-    opacity: 0.7;
-  }
-
-  ul {
-    list-style: none;
-  }
-
-  body .Toastify .Toastify__toast-container .Toastify__toast--success {
-    background-color: #0F2C59;
-    color: green;
-    font-weight: bold;
-  }
-
-  body .Toastify .Toastify__toast-container .Toastify__toast--error {
-    background-color: #0F2C59;
-    color: red;
-    font-weight: bold;
-  }
-
-  body .Toastify .Toastify__toast-container .Toastify__toast .Toastify__close-button {
-    color: white;
-    opacity: 0.9;
+    align-self: center;
   }
 `;
 
 export const Container = styled.section`
-  min-width: 20%;
-  max-width: 99%;
-  background: ${color.primaryColor};
-  margin: 7px auto;
-  border-radius: 4px;
-  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
+  min-height: 100%;
+  min-width: 100%;
+  background: url(${BackgroundImage});
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
